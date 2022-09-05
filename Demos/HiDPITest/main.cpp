@@ -1,6 +1,8 @@
 #include "stdafx.h"
 #include "duilib.h"
 
+#include "..\..\DuiLib\UIlib.h"
+
 int APIENTRY _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdLine, int nCmdShow)
 {
     ::CoInitialize(NULL);
