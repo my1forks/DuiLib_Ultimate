@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!-- 定义窗口的大小-->
+<Window size="800,600" bkcolor="0xffffffff" caption="0,0,0,-1">
+
+	<!-- 设置字体 -->
+	<Font name="微软雅黑" size="15" default="true" id="1" />
+
+	<!-- 设置布局的背景,一是为了好看,二是方便调试 -->
+	
+	<!-- 外围最大的布局,也可以叫背景 -->
+	<HorizontalLayout name="sysbtn" width="800" height="600" childpadding="0" bkcolor="0xffffffff">
+		
+		<!-- 这个Vertical很关键,不然Horizontal布局只能搞一个 -->
+		<VerticalLayout>
+
+		<!-- 窗口名那一行，包含图标 名字 最小化关闭按钮 -->
+		<HorizontalLayout width="800" height="30">
+			<Button name="program" width="34" height="30" normalimage="images.png"/>
+			<!-- 一定要利用widht 和 height限制窗口名字的大小 -->
+			<Label name="window" text="百度壁纸 - By Troy(656067418)" textcolor="#FF4c8bda" textpadding="16,0,0,0"/>
+			<!-- width和height可以控制图标的大小,但是控制不了位置 pos没有用 -->
+			<Button name="minbtn" width="34" height="30" normalimage="main/209.bmp" hotimage="main/210.bmp" pushedimage="main/211.bmp"/>
+			<Button name="closebtn" width="34" height="30" normalimage="main/206.bmp" hotimage="main/207.bmp" pushedimage="main/208.bmp" tooltip="关闭"/>
+		</HorizontalLayout>
+
+		<VerticalLayout width="300" height="200">
+			<!-- 选项的多少受到最近的布局的大小的限制 -->
+			<HorizontalLayout width="100" height="50">
+				<Label name="sads" width="60" height="40" text="选项1" align="center"/>
+				<CheckBox name="chkOption"  width="40" height="40" normalimage="file='方形选中.png' " selectedimage="file='方形未选中.png'"/>
+			</HorizontalLayout>
+			<HorizontalLayout width="100" height="50">
+				<Label name="sad" width="60" height="40" text="选项2" align="center"/>
+				<CheckBox name="chkOption"  width="40" height="40" normalimage="file='方形选中.png' " selectedimage="file='方形未选中.png'"/>
+			</HorizontalLayout>
+			<HorizontalLayout width="100" height="50">
+				<Label name="sad" width="60" height="40" text="选项2" align="center"/>
+				<CheckBox name="chkOption"  width="40" height="40" normalimage="file='方形选中.png' " selectedimage="file='方形未选中.png'"/>
+			</HorizontalLayout>
+			<HorizontalLayout width="100" height="50">
+				<Label name="sad" width="60" height="40" text="选项3" align="center"/>
+				<CheckBox name="chkOption"  width="40" height="40" normalimage="file='方形选中.png' " selectedimage="file='方形未选中.png'"/>
+			</HorizontalLayout>
+			<HorizontalLayout width="100" height="50">
+				<Label name="sad" width="60" height="40" text="选项4" align="center"/>
+				<CheckBox name="chkOption"  width="40" height="40" normalimage="file='方形选中.png' " selectedimage="file='方形未选中.png'"/>
+			</HorizontalLayout>
+			<HorizontalLayout width="100" height="50">
+				<Label name="sad" width="60" height="40" text="选项5" align="center"/>
+				<CheckBox name="chkOption"  width="40" height="40" normalimage="file='方形选中.png' " selectedimage="file='方形未选中.png'"/>
+			</HorizontalLayout>
+		</VerticalLayout>
+
+		<RichEdit name="richedit" text="日志" multiline="true" vscrollbar="true" autohscroll="true"/>
+
+	
+	</VerticalLayout>
+	</HorizontalLayout>
+
+	
+
+</Window>
